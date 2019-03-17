@@ -1,5 +1,6 @@
 翻了一下之前的日报，发现还没有人教如何手写OJ。那么~~捡漏走起~~
 
+
 ------------
 
 
@@ -55,6 +56,7 @@ Day1[**全部代码下载**](https://gitee.com/freeoj/FreeOnlineJudge/raw/master
 - **submit.php** : 用于创建**judge.cpp**和**data.in**并在评测后返回结果
 - **judge.sh** : 编译**judge.cpp**并进行测试，输出**data.out**
 
+
 ------------
 
 首先创建一个文件夹：judge，新建一个脚本：judge.sh,在新弹出的编辑器里写入
@@ -65,6 +67,7 @@ g++ judge.cpp -O2 -o judge # 编译
 ./judge < data.in > data.out # 运行
 ```
 **记得**`chmod 755 judge.sh` 
+
 
 ------------
 
@@ -108,6 +111,7 @@ fclose($fout);
 ?>
 ```
 
+
 ------------
 
 然后**submit.html**就极其简单易懂了。
@@ -129,6 +133,7 @@ fclose($fout);
 
 </html>
 ```
+
 
 ------------
 
@@ -247,9 +252,11 @@ echo "<a href=\"judge/submit.html\">Submit</a>"; //submit链接
 ?>
 ```
 
+
 ------------
 
 到Day2为止，一个基本的OJ就建成了。它拥有**题面展示**、**评测**功能。
+
 
 ------------
 ### Day3：小优化 && TLE的判别
@@ -369,6 +376,7 @@ while (is_file($p_fnt . "data" . (string)($curj) . ".in")){
 
 ```
 测试一下...可以判别CE了。
+
 
 ------------
 
@@ -749,6 +757,7 @@ echo "</tbody></table></body></html>";
 ```
 
 其他文件还需要修改，篇幅原因省略。
+
 
 ------------
 到Day8为止，一个OJ的核心就完成了。仅仅`14.87KB`的代码，甚至比Win7自带的计算器(`758KB`)还要小！在完成核心之后，我们只需进行一些优化即可。
