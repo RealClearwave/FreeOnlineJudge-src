@@ -7,10 +7,10 @@ A Free OJ Project
 x86/x64/armhf
 
 #### 安装教程
-详见14dayOJTutorial.md
+详见14dayOJTutorial_Full.md
 
 #### 使用说明
-详见14dayOJTutorial.md
+详见14dayOJTutorial_Full.md
 
 #### 参与贡献
 
